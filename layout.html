@@ -1,56 +1,179 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <title>Demo</title>
-  <link rel="stylesheet" type="text/css" href="css/timeline.css" />
-  <link rel="stylesheet" href="css/style.css"/>
+    <meta charset="utf-8">
+    <title>Demo</title>
+    <link rel="stylesheet" type="text/css" href="css/timeline.css"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/button.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+
 </head>
-<body style="height: 100%; margin: 0px; padding: 0px";>
+<body style="height: 100%; margin: 0px; padding: 0px" ;>
 <div id="maxname" style="width: 100%; height: 100%">
-  <header class="header-section">
-    <div class="logo">
-      <img src="images/cp3-black.png" ><!-- Logo -->
-    </div>
-    <!-- Navigation -->
-    <ul class="menu-list">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#service">service</a></li>
-      <li><a href="#portfolio">Portfolio</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </header>
-
-  <section class="intro-section fix" id="home">
-    <div class="intro-bg bg-cms"></div>
-    <div class="intro-inner">
-      <div class="intro-content">
-        <div class="profile-img">
-          <img src="images/myself.png">
+    <header class="header-section">
+        <div class="logo">
+            <img src="images/cp3-black.png"><!-- Logo -->
         </div>
-        <h2 class="para">
-          <p class="p1">I'm HUANG Zuo, I love coding!</p>
-        </h2>
-      </div>
-    </div>
-  </section>
-<!--  <div id="hname" style="background-color:#666FFF;">-->
-<!--    <h1 style="margin-bottom:0;text-align:center;">Div布局实例</h1>-->
-<!--  </div>-->
-<!--  <div id="menu" style="background-color:#FFFFFF;height:100%;width:10%;float:left;">-->
-<!--    <p>-->
-<!--      <a href="timeline.html" target="timeline">timeline</a>-->
-<!--    </p>-->
+        <!-- Navigation -->
+        <ul class="menu-list">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#timeline">timeline</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </header>
 
-<!--  </div>-->
-<!--  <iframe name="timeline" src="timeline.html" style="border:0; height:800px;width:80%;float:left;"></iframe>-->
-<!--  <div id="right" style="background-color:#000000;color:#FFFFFF;height:100%;width:10%;float:right;">-->
-<!--    信息内容-->
-<!--  </div>-->
-<!--  <div id="foot" style="background-color:#F0F8FF;clear:both;text-align:center;">-->
-<!--    作者：Zed-->
-<!--  </div>-->
+    <section class="intro-section fix" id="home">
+        <div class="intro-bg bg-cms"></div>
+        <div class="intro-inner">
+            <div class="intro-content">
+                <div class="profile-img">
+                    <img src="images/myself.png">
+                </div>
+                <h2 class="para">
+                    <p class="p1">I'm HUANG Zuo, I love coding!</p>
+                </h2>
+            </div>
+        </div>
+    </section>
+
+    <main class="main-warp">
+        <section class="about-section fix" id="about">
+            <div class="row">
+                <div class="col-about">
+                    <h2>A short story about me.</h2>
+                    <p>I am Michael Owen. Impossible considered invitation him men instrument saw celebrated unpleasant.
+                        Put rest and must set kind next many near nay. He exquisite continued explained middleton am.
+                        Impossible considered invitation him men instrument saw celebrated unpleasant. Put rest and must
+                        set kind next many near nay. He exquisite continued explained middleton am. Voice hours young
+                        woody.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="timeline-section fix" id="timeline">
+            <div>
+                <div class="container left">
+                    <div class="date">15 Dec</div>
+                    <i class="icon fa fa-home"></i>
+                    <div class="content">
+                        <h2>Lorem ipsum dolor sit amet</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit
+                            semper pretium.
+                        </p>
+                    </div>
+                </div>
+                <div class="container right">
+                    <div class="date">22 Oct</div>
+                    <i class="icon fa fa-gift"></i>
+                    <div class="content">
+                        <h2>Lorem ipsum dolor sit amet</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit
+                            semper pretium.
+                        </p>
+                    </div>
+                </div>
+                <div class="container left">
+                    <div class="date">10 Jul</div>
+                    <i class="icon fa fa-user"></i>
+                    <div class="content">
+                        <h2>Lorem ipsum dolor sit amet</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit
+                            semper pretium.
+                        </p>
+                    </div>
+                </div>
+                <div class="container right">
+                    <div class="date">18 May</div>
+                    <i class="icon fa fa-running"></i>
+                    <div class="content">
+                        <h2>Lorem ipsum dolor sit amet</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit
+                            semper pretium.
+                        </p>
+                    </div>
+                </div>
+                <div class="container left">
+                    <div class="date">10 Feb</div>
+                    <i class="icon fa fa-cog"></i>
+                    <div class="content">
+                        <h2>Lorem ipsum dolor sit amet</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit
+                            semper pretium.
+                        </p>
+                    </div>
+                </div>
+                <div class="container right">
+                    <div class="date">01 Jan</div>
+                    <i class="icon fa fa-certificate"></i>
+                    <div class="content">
+                        <h2>Lorem ipsum dolor sit amet</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit
+                            semper pretium.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-section fix" id="contact">
+            <div class="container pt100 pb100">
+                <div class="pl50p">
+                    <h2>Get in touch</h2>
+                </div>
+                <div class="wrapper">
+                    <div class="icon facebook">
+                        <div class="tooltip">Facebook</div>
+                        <span><i class="fab fa-facebook-f"></i></span>
+                    </div>
+                    <div class="icon twitter">
+                        <div class="tooltip">Twitter</div>
+                        <span><i class="fab fa-twitter"></i></span>
+                    </div>
+                    <div class="icon instagram">
+                        <div class="tooltip">Instagram</div>
+                        <span><i class="fab fa-instagram"></i></span>
+                    </div>
+                    <div class="icon github">
+                        <div class="tooltip">Github</div>
+                        <span><i class="fab fa-github"></i></span>
+                    </div>
+                    <div class="icon weibo">
+                        <div class="tooltip">Youtube</div>
+                        <span>
+            <i onclick="jump()" class="fa fa-weibo" style="font-size:24px"></i>
+        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!--  <div id="hname" style="background-color:#666FFF;">-->
+    <!--    <h1 style="margin-bottom:0;text-align:center;">Div布局实例</h1>-->
+    <!--  </div>-->
+    <!--  <div id="menu" style="background-color:#FFFFFF;height:100%;width:10%;float:left;">-->
+    <!--    <p>-->
+    <!--      <a href="timeline.html" target="timeline">timeline</a>-->
+    <!--    </p>-->
+
+    <!--  </div>-->
+    <!--  <iframe name="timeline" src="timeline.html" style="border:0; height:800px;width:80%;float:left;"></iframe>-->
+    <!--  <div id="right" style="background-color:#000000;color:#FFFFFF;height:100%;width:10%;float:right;">-->
+    <!--    信息内容-->
+    <!--  </div>-->
+    <!--  <div id="foot" style="background-color:#F0F8FF;clear:both;text-align:center;">-->
+    <!--    作者：Zed-->
+    <!--  </div>-->
 </div>
 <script src="js/js.js"></script>
 </body>
