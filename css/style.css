@@ -1,29 +1,7 @@
-/* ----------------------------------
-OWEN
-Version: 1.0
-Author: FrozenTheme
-
--------------------------------------
-
-Table of contents
-
-  @ Main Styles
-  @ Intro 
-  @ About 
-  @ Service
-  @ Portfolio
-  @ Review
-  @ Promotion 
-  @ Contact
-  @ Footer
-  @ Responsive
-
-*/
 
 /* ====================
   Main Styles
 =======================*/
-@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700|Poppins:400,700");
 html, body {
 	height: 100%;
 	font-family: "Montserrat", sans-serif;
@@ -59,8 +37,22 @@ li, ul {
 .pt100 {
 	padding-top: 100px;
 }
+.pt50 {
+	padding-top: 50px;
+}
 .pb100 {
 	padding-bottom: 100px;
+}
+.pb50 {
+	padding-bottom: 50px;
+}
+.pl50p {
+	/*padding-left: 50%;*/
+	left: 50%;
+	top: 50%;
+}
+.pr50p {
+	padding-right: 50%;
 }
 .mb100 {
 	margin-bottom: 100px;
@@ -82,6 +74,9 @@ li, ul {
 }
 .mt25 {
 	margin-top: 25px;
+}
+.mt80 {
+	margin-top: 80px;
 }
 .nopad {
 	padding-left: 0;
@@ -192,6 +187,9 @@ li, ul {
 		-webkit-transform: rotate(360deg);
 	}
 }
+.clear{
+	clear: both;
+}
 .main-warp {
 	position: relative;
 	z-index: 5;
@@ -270,7 +268,7 @@ li, ul {
 =======================*/
 .intro-section {
 	height: 100%;
-	position: relative;
+	/*position: relative;*/
 	overflow: hidden;
 	z-index: 6;
 }
@@ -281,8 +279,8 @@ li, ul {
 	left: 0;
 	top: 0;
 	/*background: #0a0c17;*/
-	background-image: url("../images/hk.jpeg");
-	background-size: cover;
+	background-image: url("../images/hk.png");
+	background-size: 100% 100%;
 }
 #particles {
 	position: absolute;
@@ -317,80 +315,19 @@ li, ul {
 	margin: 0 auto;
 	border-radius: 50%;
 	overflow: hidden;
-	border: 8px solid #fff;
+	border: 10px solid #fff;
 	-webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.61);
-	        box-shadow: 0 0 20px rgba(0, 0, 0, 0.61);
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.61);
 	position: relative;
 	z-index: 9;
 }
-/*.intro-inner .intro-content .h2 {*/
-/*	font-family: "Poppins", sans-serif;*/
-/*	font-size: 40px;*/
-/*	font-weight: 500;*/
-/*	color: #fff;*/
-/*	margin-top: 25px;*/
-/*}*/
-.intro-inner .intro-content .para .p1 {
-	/*font-family: "Poppins", sans-serif;*/
-	font-size: 35px;
-	height: 35px;
-	text-align: center;
-	font-weight: 500;
+.intro-inner .intro-content h2 {
+	font-family: "Poppins", sans-serif;
+	font-size: 40px;
+	font-weight: 600;
 	color: #fff;
-	width: 10em;
-	white-space: nowrap;
-	border-right: 1px solid transparent;
-	animation: typing 3.5s steps(37, end), blink-caret .75s step-end infinite;
-	word-break: break-all;
-	overflow: hidden;
-	/*overflow: hidden;*/
-	/*display: inline;*/
+	margin-top: 70px;
 }
-
-@keyframes typing {
-	from { width: 0; }
-	to { width: 15em; }
-}
-@keyframes blink-caret {
-	50% { border-right-color: #fff; }
-}
-
-/*.intro-inner .intro-content .para .p2 {*/
-/*	font-family: "Poppins", sans-serif;*/
-/*	font-size: 40px;*/
-/*	font-weight: 500;*/
-/*	color: #f60505;*/
-/*	margin-top: 25px;*/
-/*	animation-delay: 3s;*/
-/*	animation-duration: 3s;*/
-/*	animation-name: slideinp2;*/
-/*	display: inline;*/
-/*}*/
-
-/*.intro-inner .intro-content .para .p3 {*/
-/*	font-family: "Poppins", sans-serif;*/
-/*	font-size: 40px;*/
-/*	font-weight: 500;*/
-/*	color: #f60505;*/
-/*	margin-top: 25px;*/
-/*	animation-delay: 3s;*/
-/*	animation-duration: 3s;*/
-/*	animation-name: slideinp3;*/
-/*	display: inline;*/
-/*}*/
-
-@keyframes slideinp1 {
-	from {
-		margin-left: 80%;
-		width: 100%;
-	}
-
-	to {
-		margin-left:-100%;
-		width: 100%;
-	}
-}
-
 .typed-cursor {
 	opacity: 1;
 	-webkit-animation: blink 0.7s infinite;
@@ -428,6 +365,13 @@ li, ul {
 	position: relative;
 	overflow: hidden;
 }
+.about-section {
+	position: relative;
+	overflow: hidden;
+}
+.about-backgroud {
+	background: #A0EEE1;
+}
 .about-top {
 	text-align: center;
 }
@@ -441,7 +385,12 @@ li, ul {
 }
 .about-text p ins {
 	-webkit-text-decoration-style: wavy;
-	        text-decoration-style: wavy;
+	text-decoration-style: wavy;
+}
+.about-section .row .col-about {
+	position: relative;
+	overflow: hidden;
+	margin: 100px 100px 100px 100px;
 }
 .single-progress-item {
 	margin-bottom: 35px;
@@ -493,8 +442,8 @@ li, ul {
 /* ====================
   Service Section
 =======================*/
-.service-section {
-	background: #ddd;
+.timeline-section {
+	background: #4baadd;
 }
 .service-item {
 	position: relative;
@@ -778,6 +727,9 @@ li, ul {
 =======================*/
 .cont-form {
 	margin-top: 60px;
+}
+.cont-back {
+	background: #D6D5B7;
 }
 .cont-form input {
 	width: 100%;
